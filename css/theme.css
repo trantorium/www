@@ -21,11 +21,19 @@ body {
     background-position: top left;
     background-image: url("../images/topborder.png");
     background-repeat: repeat-x;
-    
-    margin-top: 1.25em;
-    margin-bottom: 0;
+
+    margin: 0 0;
+    padding-top: 1.25em;
     
     font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1;
 }
 
 /*  -------------------------------------------------------------
@@ -63,7 +71,7 @@ h3 {
     Footer
     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -    */
 
-#footer {
+footer {
     background-color: #35343c;
     background-image: url("../images/footer_bg.jpg");
     background-position: top left;
@@ -71,33 +79,33 @@ h3 {
     
     min-height: 12em;
     
-    padding-top: 2em;
+    padding-top: 3em;
     color: white;
 }
 
 /* Footer links are not underlined, white and bold */
 
-#footer a {
+footer a {
 	color: white;
     text-decoration: none;
 }
 
-#footer a:hover {
+footer a:hover {
 	font-weight: bold;
 }
 
-#footer dt {
+footer dt {
     font-weight: 900;
     margin-bottom: 1em;
 }
 
-#footer dd {
+footer dd {
     margin-left: 8px;
 }
 
 /* Copyright line. */
 
-#footer .copyright {
+footer .copyright {
     margin-top: 1em;
     font-size: 0.88em;
     text-align: right;
